@@ -1,0 +1,29 @@
+.rightFrame{
+	background: rgb(45, 45, 45);
+	padding: 10px;
+	border-radius: 4px;	
+}
+
+.leftFrame{
+
+}
+
+.label-margin-input{
+	border-right: 2px solid green;
+}
+
+.label-margin-output{
+	border-right: 2px solid lightseagreen;
+}
+
+.label-margin-loaders{
+	border-right: 2px solid lightsalmon;
+}
+
+.label-margin-plugins{
+	border-right: 2px solid mediumorchid;
+}
+
+.label-margin-mode{
+	border-right: 2px solid rosybrown;
+}
