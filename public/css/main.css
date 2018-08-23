@@ -1,6 +1,6 @@
 .rightFrame{
 	background: rgb(45, 45, 45);
-	padding: 10px;
+	padding: 5px;
 	border-radius: 4px;	
 }
 
@@ -26,6 +26,23 @@
 
 .label-margin-mode{
 	border-right: 2px solid rosybrown;
+}
+
+.subtitle{
+	font-size: 11px;
+}
+
+.bd-copy-btn{
+    display: block;
+    position: relative;
+}
+
+.copy-btn{
+    position: absolute;    
+}
+
+.table-font-size{
+    font-size: 0.875rem;
 }
 
 /* The customCheckBox */

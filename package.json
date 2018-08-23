@@ -43,8 +43,7 @@
     "clean": "rm -rf dist && mkdir -p dist/",
     "dev": "webpack-dev-server --config webpack.config.dev.js --mode development --open --hot",
     "build": "webpack --config webpack.config.prod.js --mode production",
-    "prod": "npm-run-all clean build",
-    "deploy": "gh-pages -b master -d dist"
+    "prod": "npm-run-all clean build"
   },
   "keywords": [],
   "author": "",

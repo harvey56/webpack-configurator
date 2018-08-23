@@ -4,7 +4,8 @@ import { tomorrowNightEighties } from 'react-syntax-highlighter/styles/hljs';
 
 import { webpack4MinConfig } from '../config_files/webpack4MinConfig';
 import InputConfigMenu from './inputConfigMenu';
-import WebpackConfigGenerated from './webpackConfigGenerated';
+import Navbar from './navbar';
+//import WebpackConfigGenerated from './webpackConfigGenerated';
 
 import '../../../public/css/main.css';
 
@@ -34,14 +35,17 @@ class App extends Component {
 
     return (
       <div>
-        <h1>React App!!!</h1>
+        <Navbar />
         <div className = "row">
         	<InputConfigMenu onDisplayGeneratedConfig = { this.handleNewConfig } />
         	<div className = "col-md-5">
-            <div className = "leftFrame mb-5">
-              <h3>Configuration outputs here</h3>
+            <div className = "leftFrame mb-3">
+              <h4 className = "text-muted">Configuration outputs</h4>
             </div>
             <div className = "rightFrame">
+                <div className = "d-flex justify-content-end bd-copy-btn">
+                  <button type="button" className = "btn btn-outline-primary btn-sm d-flex justify-content-end copy-btn">Copy</button>
+                </div>
                 <SyntaxHighlighter language='javascript' style={this.state.style} showLineNumbers={true}>
                    { this.state.WebpackConfigGenerated } 
                 </SyntaxHighlighter>

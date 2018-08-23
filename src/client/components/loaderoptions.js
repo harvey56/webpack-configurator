@@ -29,6 +29,11 @@ const loaderOptions = [
     key: 'checkBox6',
     label: 'Check Box 6',
   },
+  {
+    name: 'data',
+    key: 'checkBox7',
+    label: 'Check Box 7',
+  }
 ];
 
 export default loaderOptions;
